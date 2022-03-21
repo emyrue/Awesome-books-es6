@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  position: relative;
+  padding-bottom: 90px;
+  min-height: calc(100vh - 10px);
+}
+
+h2 {
+  text-align: center;
+  font-size: 40px;
+  margin: 20px;
+}
+
+/* header */
+
+header {
+  display: flex;
+  padding: 5px;
+  justify-content: space-between;
+  border: 2px solid black;
+  margin: 5px;
+}
+
+.menu-title {
+  font-size: 20px;
+  padding: 15px;
+}
+
+.menu-item {
+  padding: 15px;
+}
+
+.divider {
+  color: gray;
+}
+
+.menu-options {
+  list-style: none;
+  display: flex;
+  cursor: pointer;
+}
+
+.date {
+  margin: 5px;
+  text-align: right;
+}
+
+/* list */
+
+.book-list {
+  width: 70%;
+  margin: auto;
+}
+
+.books {
+  border: 1px solid black;
+  margin: 20px 0;
+}
+
+ul.books li:nth-child(odd) {
+  background-color: rgb(201, 199, 199);
+}
+
+.new-book {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  align-items: center;
+  padding: 15px;
+}
+
+.remove {
+  border: 1px solid black;
+  padding: 7px;
+  background-color: white;
+}
+
+/* form */
+
+.book-form {
+  width: 70%;
+  margin: auto;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin: 10px 0;
+  border: 2px solid black;
+  padding: 5px;
+}
+
+input::placeholder {
+  color: black;
+}
+
+#add {
+  width: 50px;
+  align-self: flex-end;
+  padding: 5px;
+  border: 2px solid black;
+  background: white;
+  box-shadow: 5px 5px rgb(201, 199, 199);
+}
+
+/* contact */
+
+.contact {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.contact-paragraph {
+  font-size: 25px;
+  width: 70%;
+}
+
+.contact-list {
+  list-style-type: disc;
+}
+
+.contact-info {
+  font-size: 20px;
+}
+
+/* footer */
+
+footer {
+  border: 2px solid black;
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-self: flex-end;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+h3 {
+  margin: 0;
+  padding: 15px;
+}
+
+.copyright {
+  width: 50%;
+  padding: 15px;
+  text-align: right;
+}
+
+/* display: none */
+
+.none {
+  display: none;
+}
