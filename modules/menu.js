@@ -1,4 +1,4 @@
-export const displaySection = (menuList, menuAdd, menuContact,
+const displaySection = (menuList, menuAdd, menuContact,
   listSection, formSection, contactSection) => {
   menuList.addEventListener('click', () => {
     if (listSection.classList.contains('none')) {
@@ -32,4 +32,6 @@ export const displaySection = (menuList, menuAdd, menuContact,
       }
     }
   });
-}
+};
+
+export default displaySection;
