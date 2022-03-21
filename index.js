@@ -1,6 +1,6 @@
 import {Book} from './modules/book.js';
 import Books from './modules/books.js';
-import * as menu from './modules/menu.js';
+import {displaySection} from './modules/menu.js';
 
 const booksSection = document.querySelector('.books');
 const newTitle = document.getElementById('new-title');
@@ -38,3 +38,14 @@ add.addEventListener('click', () => {
 
 const theDate = new Date();
 document.querySelector('.date').innerHTML = theDate;
+
+const menuList = document.querySelector('.menu-item1');
+const menuAdd = document.querySelector('.menu-item2');
+const menuContact = document.querySelector('.menu-item3');
+const listSection = document.querySelector('.book-list');
+const formSection = document.querySelector('.book-form');
+const contactSection = document.querySelector('.contact');
+
+const elements = [menuList, menuAdd, menuContact, listSection, formSection, contactSection];
+
+displaySection(...elements);
