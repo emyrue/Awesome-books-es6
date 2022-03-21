@@ -3,11 +3,11 @@ export default class Books {
     this.books = [];
   }
 
-  add(book) {
+  add = (book) => {
     this.books.push(book);
   }
 
-  delete(index) {
+  delete = (index) => {
     this.books.splice(index, 1);
     window.localStorage.setItem('bookArray', JSON.stringify(this.books));
     for (let i = 0; i < this.books.length; i += 1) {
@@ -16,7 +16,7 @@ export default class Books {
     window.location.reload();
   }
 
-  checkStorage() {
+  checkStorage = () => {
     if (window.localStorage.getItem('bookArray') !== null) {
       const newBooks = [];
       const array = JSON.parse(window.localStorage.getItem('bookArray'));
@@ -27,14 +27,14 @@ export default class Books {
     }
   }
 
-  store() {
+  store = () => {
     window.localStorage.setItem('bookArray', JSON.stringify(this.books));
     for (let i = 0; i < this.books.length; i += 1) {
       window.localStorage.setItem(i.toString(), JSON.stringify(this.books[i]));
     }
   }
 
-  display(index) {
+  display = (index) => {
     return `  
       <div class="title">${this.books[index].title} by ${this.books[index].author}</div>
       <button type="button" class="remove">Remove</button>

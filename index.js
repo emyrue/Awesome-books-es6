@@ -11,6 +11,13 @@ const book1 = new Book('First Book', 'First Author');
 const book2 = new Book('Second Book', 'Second Author');
 const book3 = new Book('Third Book', 'Third Author');
 const bookList = new Books();
+const menuList = document.querySelector('.menu-item1');
+const menuAdd = document.querySelector('.menu-item2');
+const menuContact = document.querySelector('.menu-item3');
+const listSection = document.querySelector('.book-list');
+const formSection = document.querySelector('.book-form');
+const contactSection = document.querySelector('.contact');
+const elements = [menuList, menuAdd, menuContact, listSection, formSection, contactSection];
 bookList.add(book1);
 bookList.add(book2);
 bookList.add(book3);
@@ -39,14 +46,5 @@ add.addEventListener('click', () => {
 
 const now = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
 document.querySelector('.date').innerHTML = now;
-
-const menuList = document.querySelector('.menu-item1');
-const menuAdd = document.querySelector('.menu-item2');
-const menuContact = document.querySelector('.menu-item3');
-const listSection = document.querySelector('.book-list');
-const formSection = document.querySelector('.book-form');
-const contactSection = document.querySelector('.contact');
-
-const elements = [menuList, menuAdd, menuContact, listSection, formSection, contactSection];
 
 displaySection(...elements);
