@@ -1,5 +1,6 @@
 import {Book} from './modules/book.js';
 import Books from './modules/books.js';
+import * as menu from './modules/menu.js';
 
 const booksSection = document.querySelector('.books');
 const newTitle = document.getElementById('new-title');
@@ -29,6 +30,11 @@ for (let i = 0; i < bookList.books.length; i += 1) {
 }
 
 add.addEventListener('click', () => {
-  bookList.add(new Book(newTitle.value, newAuthor.value));
-  bookList.store();
+  if (newTitle.value && newAuthor.value) {
+    bookList.add(new Book(newTitle.value, newAuthor.value));
+    bookList.store();
+  }
 });
+
+const theDate = new Date();
+document.querySelector('.date').innerHTML = theDate;

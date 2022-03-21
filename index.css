@@ -52,6 +52,11 @@ header {
   cursor: pointer;
 }
 
+.date {
+  margin: 5px;
+  text-align: right;
+}
+
 /* list */
 
 .book-list {
@@ -80,6 +85,38 @@ ul.books li:nth-child(odd) {
   border: 1px solid black;
   padding: 7px;
   background-color: white;
+}
+
+/* form */
+
+.book-form {
+  width: 70%;
+  margin: auto;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin: 10px 0;
+  border: 2px solid black;
+  padding: 5px;
+}
+
+input::placeholder {
+  color: black;
+}
+
+#add {
+  width: 50px;
+  align-self: flex-end;
+  padding: 5px;
+  border: 2px solid black;
+  background: white;
+  box-shadow: 5px 5px rgb(201, 199, 199);
+  
 }
 
 /* display: none */
