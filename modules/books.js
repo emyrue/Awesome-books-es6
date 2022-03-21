@@ -34,7 +34,7 @@ export default class Books {
     }
   }
 
-  display = (index) => {
+  display(index) {
     return `  
       <div class="title">${this.books[index].title} by ${this.books[index].author}</div>
       <button type="button" class="remove">Remove</button>
