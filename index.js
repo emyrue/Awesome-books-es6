@@ -1,6 +1,7 @@
 import Book from './modules/book.js';
 import Books from './modules/books.js';
 import displaySection from './modules/menu.js';
+import { DateTime } from './modules/luxon.js';
 
 const booksSection = document.querySelector('.books');
 const newTitle = document.getElementById('new-title');
@@ -36,8 +37,8 @@ add.addEventListener('click', () => {
   }
 });
 
-const theDate = new Date();
-document.querySelector('.date').innerHTML = theDate;
+const now = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
+document.querySelector('.date').innerHTML = now;
 
 const menuList = document.querySelector('.menu-item1');
 const menuAdd = document.querySelector('.menu-item2');
