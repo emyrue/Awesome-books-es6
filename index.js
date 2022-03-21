@@ -1,6 +1,6 @@
 import Book from './modules/book.js';
 import Books from './modules/books.js';
-import displaySection from './modules/menu.js';
+import { displaySection } from './modules/menu.js';
 import { DateTime } from './libraries/luxon.js';
 
 const booksSection = document.querySelector('.books');
