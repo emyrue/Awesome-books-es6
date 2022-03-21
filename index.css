@@ -13,6 +13,13 @@ body {
   overflow-x: hidden;
 }
 
+h2 {
+  text-align: center;
+  font-size: 40px;
+}
+
+/* header */
+
 header {
   display: flex;
   padding: 5px;
@@ -42,4 +49,31 @@ header {
   list-style: none;
   display: flex;
   cursor: pointer;
+}
+
+/* list */
+
+.book-list {
+  width: 70%;
+  margin: auto;
+}
+
+.books {
+  border: 1px solid black;
+}
+
+ul.books li:nth-child(odd) {
+  background-color: rgb(201, 199, 199);
+}
+
+.new-book {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+/* display: none */
+
+.none {
+  display: none;
 }

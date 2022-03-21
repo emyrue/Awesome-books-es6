@@ -36,8 +36,7 @@ export default class Books {
 
   display(index) {
     return `  
-      <div class="title">${this.books[index].title}</div>
-      <div class="author">${this.books[index].author}</div>
+      <div class="title">${this.books[index].title} by ${this.books[index].author}</div>
       <button type="button" class="remove">Remove</button>
     `;
   }
