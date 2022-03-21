@@ -39,7 +39,6 @@ export default class Books {
       <div class="title">${this.books[index].title}</div>
       <div class="author">${this.books[index].author}</div>
       <button type="button" class="remove">Remove</button>
-      <hr>
     `;
   }
 }

@@ -15,7 +15,8 @@ bookList.add(book3);
 bookList.checkStorage();
 
 for (let k = 0; k < bookList.books.length; k += 1) {
-  const newElement = document.createElement('section');
+  const newElement = document.createElement('div');
+  newElement.className = 'new-book';
   newElement.innerHTML = bookList.display(k);
   booksSection.appendChild(newElement);
 }

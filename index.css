@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  padding: 5px;
+  justify-content: space-between;
+  border: 2px solid black;
+  margin: 5px;
+}
+
+.menu-title {
+  font-size: 20px;
+  padding: 15px;
+}
+
+.menu-options {
+  display: flex;
+}
+
+.menu-item {
+  padding: 15px;
+}
+
+.divider {
+  color: gray;
+}
+
+.menu-options {
+  list-style: none;
+  display: flex;
+  cursor: pointer;
+}

@@ -4,18 +4,28 @@
         <title>Awesome Books</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./index.css">
         <script src="./index.js" type="module"></script>
     </head>
     <body>
-        <h1>Awesome Books</h1>
+        <header>
+            <h1 class="menu-title">Awesome Books</h1>
+            <ul class="menu-options">
+                <li class="menu-item menu-item1">List</li>
+                <li class="menu-item divider">|</li>
+                <li class="menu-item menu-item2">Add new</li>
+                <li class="menu-item divider">|</li>
+                <li class="menu-item menu-item3">Contact</li>
+            </ul>
+        </header>
         <section class="books">
-
+            <h2>Awesome Books</h2>
         </section>
-        <form id="form">
+        <form id="form" class="none">
             <input type="text" id="new-title" placeholder="Title" required>
             <input type="text" id="new-author" placeholder="Author" required>
             <button type="submit" id="add">Add</button>
         </form>
+        
     </body>
 </html>
