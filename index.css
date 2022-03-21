@@ -16,6 +16,7 @@ body {
 h2 {
   text-align: center;
   font-size: 40px;
+  margin: 20px;
 }
 
 /* header */
@@ -60,6 +61,7 @@ header {
 
 .books {
   border: 1px solid black;
+  margin: 20px 0;
 }
 
 ul.books li:nth-child(odd) {
@@ -70,6 +72,14 @@ ul.books li:nth-child(odd) {
   display: flex;
   justify-content: space-between;
   border: 1px solid black;
+  align-items: center;
+  padding: 15px;
+}
+
+.remove {
+  border: 1px solid black;
+  padding: 7px;
+  background-color: white;
 }
 
 /* display: none */
