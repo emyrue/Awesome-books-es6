@@ -11,6 +11,9 @@ html {
 body {
   margin: 0;
   overflow-x: hidden;
+  position: relative;
+  padding-bottom: 90px;
+  min-height: calc(100vh - 10px);
 }
 
 h2 {
@@ -117,6 +120,55 @@ input::placeholder {
   background: white;
   box-shadow: 5px 5px rgb(201, 199, 199);
   
+}
+
+/* contact */
+
+.contact {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.contact-paragraph {
+  font-size: 25px;
+  width: 70%;
+}
+
+.contact-list {
+  list-style-type: disc;
+}
+
+.contact-info {
+  font-size: 20px;
+}
+
+/* footer */
+
+footer {
+  border: 2px solid black;
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-self: flex-end;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+h3 {
+  margin: 0;
+  padding: 15px;
+}
+
+.copyright {
+  width: 50%;
+  padding: 15px;
+  text-align: right;
 }
 
 /* display: none */
