@@ -1,4 +1,5 @@
-export function displaySection(menuList, menuAdd, menuContact, listSection, formSection, contactSection) {
+export default function displaySection(menuList, menuAdd, menuContact,
+  listSection, formSection, contactSection) {
   menuList.addEventListener('click', () => {
     if (listSection.classList.contains('none')) {
       listSection.classList.remove('none');

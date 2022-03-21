@@ -37,10 +37,6 @@ header {
   padding: 15px;
 }
 
-.menu-options {
-  display: flex;
-}
-
 .menu-item {
   padding: 15px;
 }
@@ -119,7 +115,6 @@ input::placeholder {
   border: 2px solid black;
   background: white;
   box-shadow: 5px 5px rgb(201, 199, 199);
-  
 }
 
 /* contact */

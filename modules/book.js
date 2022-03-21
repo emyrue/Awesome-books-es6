@@ -1,4 +1,4 @@
-export function Book(title, author) {
+export default function Book(title, author) {
   this.title = title;
   this.author = author;
 }
