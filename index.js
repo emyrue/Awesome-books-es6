@@ -1,7 +1,7 @@
 import Book from './modules/book.js';
 import Books from './modules/books.js';
 import displaySection from './modules/menu.js';
-import { DateTime } from './modules/luxon.js';
+import { DateTime } from './libraries/luxon.js';
 
 const booksSection = document.querySelector('.books');
 const newTitle = document.getElementById('new-title');
